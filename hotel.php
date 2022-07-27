@@ -139,7 +139,7 @@
 		<div id="fh5co-hotel-section">
 			<?php
 				$guests = $_POST['guests'];
-				$query = "SELECT * FROM pokoi WHERE dostepnoscPokoju = 0";
+				$query = "SELECT * FROM pokoi WHERE dostepnoscPokoju = 0 AND iloscOsob = $guests";
 				$select = $connection->query($query);
 
 				while ($row = mysqli_fetch_array($select))
