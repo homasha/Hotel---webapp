@@ -139,7 +139,6 @@
 		<div id="fh5co-hotel-section">
 			<?php
 				$query = "SELECT * FROM pokoi WHERE dostepnoscPokoju = 0";
-				$_SESSION['id'] = "SELECT id FROM pokoi";
 				$select = $connection->query($query);
 
 				while ($row = mysqli_fetch_array($select))
@@ -151,7 +150,7 @@
 			 		<div class="row">
 			 			<div class="col-md-4">
 			 				<div class="hotel-content">
-			 					<div class="hotel-grid" style="background-image: url(images/rooms/' . $_SESSION['id'] . '.jpg);">
+			 					<div class="hotel-grid" style="background-image: url(images/rooms/' . $row['id'] . '.jpg);">
 			 						<div class="price"><small>For as low as</small><span>$100/night</span></div>
 			 						<a class="book-now text-center" href="reservation/availability.php"><i class="ti-calendar"></i> Book Now</a>
 			 					</div>
