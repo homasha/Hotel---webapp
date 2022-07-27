@@ -146,12 +146,12 @@
 				{
 					if ($query == true)
 					{
-			?>
-			 		<div class="container">
+
+			 		echo '<div class="container">
 			 		<div class="row">
 			 			<div class="col-md-4">
 			 				<div class="hotel-content">
-			 					<div class="hotel-grid" style="background-image: url(images/rooms/'<?php $_SESSION['id'] ?>'.jpg);">
+			 					<div class="hotel-grid" style="background-image: url(images/rooms/' . $_SESSION['id'] . '.jpg);">
 			 						<div class="price"><small>For as low as</small><span>$100/night</span></div>
 			 						<a class="book-now text-center" href="reservation/availability.php"><i class="ti-calendar"></i> Book Now</a>
 			 					</div>
@@ -160,8 +160,8 @@
 			 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 			 					</div>
 			 				</div>
-			 			</div>
-				<?php
+			 			</div>';
+
 					}
 				}
 				?>
