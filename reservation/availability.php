@@ -134,7 +134,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="hotel-content">
-						<div class="hotel-grid" style="background-image: url(images/image-1.jpg);">
+						<div class="hotel-grid" style="background-image: url(../images/rooms/room-1.jpg);">
 							<div class="price"><small>For as low as</small><span>$100/night</span></div>
 							<a class="book-now text-center" href="#"><i class="ti-calendar"></i> Book Now</a>
 						</div>
