@@ -150,8 +150,8 @@
 			 		<div class="row">
 			 			<div class="col-md-4">
 			 				<div class="hotel-content">
-			 					<div class="hotel-grid" style="background-image: url(images/rooms/' . $row['id'] . '.jpg);">
-			 						<div class="price"><small>For as low as</small><span>$100/night</span></div>
+			 					<div class="hotel-grid" style="background-image: url(images/rooms/room-' . $row['id'] . '.jpg);">
+			 						<div class="price"><small>For as low as</small><span>'.$row['cenaPokoju'].'/night</span></div>
 			 						<a class="book-now text-center" href="reservation/availability.php"><i class="ti-calendar"></i> Book Now</a>
 			 					</div>
 			 					<div class="desc">
