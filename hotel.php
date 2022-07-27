@@ -138,6 +138,7 @@
 	</div>
 		<div id="fh5co-hotel-section">
 			<?php
+				$guests = $_POST['guests'];
 				$query = "SELECT * FROM pokoi WHERE dostepnoscPokoju = 0";
 				$select = $connection->query($query);
 
