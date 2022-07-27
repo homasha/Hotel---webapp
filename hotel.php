@@ -138,19 +138,20 @@
 	</div>
 		<div id="fh5co-hotel-section">
 			<?php
-			$query = 'SELECT * FROM pokoi WHERE dostepnoscPokoju = 0';
-			$select = $connection->query($query);
+				$query = "SELECT * FROM pokoi WHERE dostepnoscPokoju = 0";
+				// $queryIdRoom = "SELECT * FROM pokoi WHERE $idRoom = id";
+				$select = $connection->query($query);
 
-			while ($row = mysqli_fetch_array($select))
-			{
-				if ($query == true)
+				while ($row = mysqli_fetch_array($select))
 				{
+					if ($query == true)
+					{
 			?>
 			 		<div class="container">
 			 		<div class="row">
 			 			<div class="col-md-4">
 			 				<div class="hotel-content">
-			 					<div class="hotel-grid" style="background-image: url(images/rooms/room-1.jpg);">
+			 					<div class="hotel-grid" style="background-image: url(images/rooms/'<?php $queryIdRoom = "SELECT id FROM pokoi WHERE $idRoom = id" ?>'.jpg);">
 			 						<div class="price"><small>For as low as</small><span>$100/night</span></div>
 			 						<a class="book-now text-center" href="reservation/availability.php"><i class="ti-calendar"></i> Book Now</a>
 			 					</div>
