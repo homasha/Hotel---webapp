@@ -1,5 +1,8 @@
 <?php
-	session_start();
+	if (session_status() == PHP_SESSION_NONE) {
+		session_start();
+	}
+
 	require_once('config/connection.php');
 	$today = date(format:"Y-n-d");
 ?>
